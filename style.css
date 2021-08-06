@@ -94,9 +94,60 @@ button:hover {
 .content-left p {
   font-size: 18px;
   font-weight: 100;
-  padding-bottom: 30px ;
+  padding-bottom: 30px;
+}
+.content-right {
+  text-align: center;
+}
+.content-right img {
+  width: 540px;
 }
 
-.content-right img{
-  width: 540px;
+@media screen and (max-width: 1090px) {
+  header {
+    padding: 10px 5%;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  header {
+    padding: 10px 5%;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav__links li {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav__links li a {
+    font-size: 14px;
+  }
+  .landing-content {
+    padding: 50px 10%;
+    flex-direction: column-reverse;
+  }
+
+  .content-left h4 {
+    font-size: 40px;
+  }
+
+  .content-left p {
+    font-size: 15px;
+  }
+  .content-right {
+    text-align: center;
+  }
+  .content-right img {
+    width: 440px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
 }

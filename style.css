@@ -133,7 +133,7 @@ button:hover {
     text-align: center;
   }
   .content-right img {
-    width: 440px;
+    width: 450px;
   }
 
   button {
@@ -149,24 +149,29 @@ button:hover {
 
   .landing-content {
     padding: 155px 10%;
-    flex-direction: column-reverse;
   }
 
+  .content-left {
+    text-align: center;
+  }
   .content-left h4 {
     font-size: 30px;
   }
 
   .content-right img {
-    width: 250px;
+    width: 450px;
   }
-
 }
 
-@media screen and (max-width:600px) {
-  .nav__links{
+@media screen and (max-width: 600px) {
+  .nav__links {
     display: none;
   }
-  .cta{
+  header .cta {
     display: none;
+  }
+
+  .landing-content {
+    padding: 205px 10%;
   }
 }

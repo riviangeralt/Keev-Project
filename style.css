@@ -16,10 +16,13 @@ button {
 }
 
 header {
+  background:#fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -69,10 +72,10 @@ button:hover {
 }
 
 .landing-content {
-  background-image: url("image.png"),
+  background-image: url("images2.jpg"),
     linear-gradient(to bottom, rgb(1, 185, 213), #ffffff);
   background-blend-mode: multiply;
-  background-size: cover;
+  background-size: contain;
   height: 90vh;
   padding: 10px 10%;
   display: flex;

@@ -58,10 +58,6 @@ button {
   outline: none;
   border: none;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -103,19 +99,9 @@ button:hover {
   width: 540px;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1200px) {
   header {
     padding: 10px 5%;
-  }
-}
-
-@media screen and (max-width: 965px) {
-  header {
-    padding: 10px 5%;
-  }
-
-  .logo {
-    width: 100px;
   }
 
   .nav__links li {
@@ -124,11 +110,15 @@ button:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .logo {
+    width: 100px;
+  }
+
   .nav__links li a {
     font-size: 14px;
   }
   .landing-content {
-    padding: 50px 10%;
+    padding: 15px 10%;
     flex-direction: column-reverse;
   }
 
@@ -148,6 +138,35 @@ button:hover {
 
   button {
     padding: 8px 16px;
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav__links li {
+    padding: 0 10px;
+  }
+
+  .landing-content {
+    padding: 155px 10%;
+    flex-direction: column-reverse;
+  }
+
+  .content-left h4 {
+    font-size: 30px;
+  }
+
+  .content-right img {
+    width: 250px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .nav__links{
+    display: none;
+  }
+  .cta{
+    display: none;
   }
 }

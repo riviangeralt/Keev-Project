@@ -75,7 +75,8 @@ button:hover {
   background-image: url("images2.jpg"),
     linear-gradient(to bottom, rgb(1, 185, 213), #ffffff);
   background-blend-mode: multiply;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 90vh;
   padding: 10px 10%;
   display: flex;
@@ -182,7 +183,7 @@ button:hover {
   }
   .nav__links {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background: rgb(1, 185, 213);
     right: -100%;

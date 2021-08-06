@@ -99,6 +99,18 @@ button:hover {
   width: 540px;
 }
 
+.checkbtn{
+  font-size: 30px;
+  color: rgb(1, 185, 213);
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   header {
     padding: 10px 5%;
@@ -164,14 +176,34 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .nav__links {
-    display: none;
+
+  .container{
+    overflow: hidden;
   }
+  .nav__links {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(1, 185, 213);
+    left: 0;
+    top: 55px;
+    text-align: center;
+  }
+
+  .nav__links li{
+    display: block;
+    padding: 20px 0;
+  }
+
   header .cta {
     display: none;
   }
 
   .landing-content {
     padding: 205px 10%;
+  }
+
+  .checkbtn{
+    display: block;
   }
 }

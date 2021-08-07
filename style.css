@@ -15,14 +15,15 @@ button {
   color: black;
 }
 
-header {
+.nav__bar {
   background:#fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  position: sticky;
+  position: fixed !important;
   top: 0;
+  width:100%
 }
 
 .logo {
@@ -72,7 +73,7 @@ button:hover {
 }
 
 .landing-content {
-  background-image: url("images2.jpg"),
+  background-image: url("https://static.wixstatic.com/media/50c456_96fa53259f494ae08e32c8f733bc6467~mv2.jpg"),
     linear-gradient(to bottom, rgb(1, 185, 213), #ffffff);
   background-blend-mode: multiply;
   background-size: cover;
@@ -81,13 +82,21 @@ button:hover {
   padding: 10px 10%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .content-left h4 {
   font-size: 50px;
   padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-left h4 span{
+  display: block;
   font-weight: 300;
 }
+
 
 .content-left p {
   font-size: 18px;
@@ -119,7 +128,11 @@ button:hover {
   }
 
   .nav__links li {
-    padding: 0 15px;
+    padding: 0 10px;
+  }
+
+  .nav__links li a {
+    font-size: 14px;
   }
 }
 
@@ -128,9 +141,10 @@ button:hover {
     width: 100px;
   }
 
-  .nav__links li a {
-    font-size: 14px;
+  .nav__links li{
+    padding: 0 5px;
   }
+
   .landing-content {
     padding: 15px 10%;
     flex-direction: column-reverse;
@@ -157,8 +171,49 @@ button:hover {
 }
 
 @media screen and (max-width: 750px) {
+  .nav__links {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: rgb(1, 185, 213);
+    right: -100%;
+    top: 56px;
+    text-align: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
   .nav__links li {
-    padding: 0 10px;
+    display: block;
+    padding: 20px 0;
+  }
+
+  .nav__links li:first-child {
+    padding-top: 50px;
+  }
+
+  .nav__links li a {
+    color: white;
+    font-size: 16px;
+  }
+
+  .nav__links li a:hover {
+    border-bottom: 3px solid white;
+  }
+
+  header .cta {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
   }
 
   .landing-content {
@@ -216,6 +271,11 @@ button:hover {
 
   header .cta {
     display: none;
+  }
+
+  .signup{
+    display: block;
+    margin-bottom:20px;
   }
 
   .landing-content {

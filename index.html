@@ -12,8 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" sizes="192x192" href="icon.png">
-    <!-- <style>
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/50c456_e997c298887e4aba922f6f34c338abc6~mv2.png" />
+    <script
+      src="https://kit.fontawesome.com/9b90168c7b.js"
+      crossorigin="anonymous"
+    ></script>
+
+   <! –– <style>
       * {
   box-sizing: border-box;
   margin: 0;
@@ -31,15 +36,15 @@ button {
   color: black;
 }
 
-header {
+.nav__bar {
   background:#fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  position: sticky;
+  position: fixed !important;
   top: 0;
-  z-index: 9999;
+  width:100%
 }
 
 .logo {
@@ -89,21 +94,30 @@ button:hover {
 }
 
 .landing-content {
-  background-image: url("image.png"),
+  background-image: url("https://static.wixstatic.com/media/50c456_96fa53259f494ae08e32c8f733bc6467~mv2.jpg"),
     linear-gradient(to bottom, rgb(1, 185, 213), #ffffff);
   background-blend-mode: multiply;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 90vh;
   padding: 10px 10%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .content-left h4 {
   font-size: 50px;
   padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-left h4 span{
+  display: block;
   font-weight: 300;
 }
+
 
 .content-left p {
   font-size: 18px;
@@ -135,7 +149,11 @@ button:hover {
   }
 
   .nav__links li {
-    padding: 0 15px;
+    padding: 0 10px;
+  }
+
+  .nav__links li a {
+    font-size: 14px;
   }
 }
 
@@ -144,9 +162,10 @@ button:hover {
     width: 100px;
   }
 
-  .nav__links li a {
-    font-size: 14px;
+  .nav__links li{
+    padding: 0 5px;
   }
+
   .landing-content {
     padding: 15px 10%;
     flex-direction: column-reverse;
@@ -173,8 +192,49 @@ button:hover {
 }
 
 @media screen and (max-width: 750px) {
+  .nav__links {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: rgb(1, 185, 213);
+    right: -100%;
+    top: 56px;
+    text-align: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
   .nav__links li {
-    padding: 0 10px;
+    display: block;
+    padding: 20px 0;
+  }
+
+  .nav__links li:first-child {
+    padding-top: 50px;
+  }
+
+  .nav__links li a {
+    color: white;
+    font-size: 16px;
+  }
+
+  .nav__links li a:hover {
+    border-bottom: 3px solid white;
+  }
+
+  header .cta {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
   }
 
   .landing-content {
@@ -199,11 +259,11 @@ button:hover {
   }
   .nav__links {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background: rgb(1, 185, 213);
     right: -100%;
-    top: 55px;
+    top: 56px;
     text-align: center;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -223,7 +283,7 @@ button:hover {
 
   .nav__links li a {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .nav__links li a:hover {
@@ -232,6 +292,11 @@ button:hover {
 
   header .cta {
     display: none;
+  }
+
+  .signup{
+    display: block;
+    margin-bottom:20px;
   }
 
   .landing-content {
@@ -247,16 +312,11 @@ button:hover {
   }
 }
 
-
-    </style> -->
-    <script
-      src="https://kit.fontawesome.com/9b90168c7b.js"
-      crossorigin="anonymous"
-    ></script>
+    </style>-->
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="nav__bar">
         <img
           class="logo"
           src="https://static.wixstatic.com/media/ccab99_be43789de7bc4021a9e5215c35095062~mv2.png/v1/crop/x_0,y_5,w_698,h_205/fill/w_232,h_68,al_c,q_85,usm_0.66_1.00_0.01/beta_keev_edited.webp"
@@ -278,16 +338,16 @@ button:hover {
       </header>
       <div class="landing-content">
         <div class="content-left">
-          <h4>Simplifying Algorithmic Trading.</h4>
+          <h4>Simplifying <span>Algorithmic Trading.</span></h4>
           <p>
             We provide a simple way to build, test and go live with your
             algorithmic trading strategy
           </p>
-          <a class="cta" href="#"><button>sign up</button></a>
-          <a class="cta" href="#"><button>view features</button></a>
+          <a class="signup" href="#"><button>sign up</button></a>
+          <a class="view-features" href="#"><button>view features</button></a>
         </div>
         <div class="content-right">
-          <img src="Device - Macbook Pro.png" />
+          <img src="https://static.wixstatic.com/media/50c456_6a4aee5224414ffbb13bc3755938db0e~mv2.png" />
         </div>
       </div>
     </div>

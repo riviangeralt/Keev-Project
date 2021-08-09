@@ -7,6 +7,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+/* Utilities */
 li,
 a,
 button {
@@ -15,15 +16,58 @@ button {
   color: black;
 }
 
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.heading:hover {
+  transform: skewX(10deg);
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  -o-transform: skewX(10deg);
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: rgba(1, 185, 213, 1);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(1, 185, 213, 0.8);
+}
+
+/* Header CSS */
 .nav__bar {
-  background:#fff;
+  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
   position: fixed !important;
   top: 0;
-  width:100%
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -51,27 +95,19 @@ button {
   border-bottom: 3px solid rgba(67, 194, 221, 1);
 }
 
-button {
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 20px;
-  background-color: rgba(1, 185, 213, 1);
-  color: white;
-  outline: none;
-  border: none;
-  border-radius: 5px;
+.checkbtn {
+  font-size: 30px;
+  color: rgb(1, 185, 213);
+  float: right;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+  display: none;
 }
 
-button:hover {
-  background-color: rgba(1, 185, 213, 0.8);
+#check {
+  display: none;
 }
 
+/* Landing PAge Content  */
 .landing-content {
   background-image: url("https://static.wixstatic.com/media/50c456_96fa53259f494ae08e32c8f733bc6467~mv2.jpg"),
     linear-gradient(to bottom, rgb(1, 185, 213), #ffffff);
@@ -83,7 +119,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .content-left h4 {
@@ -92,11 +128,10 @@ button:hover {
   font-weight: bold;
 }
 
-.content-left h4 span{
+.content-left h4 span {
   display: block;
   font-weight: 300;
 }
-
 
 .content-left p {
   font-size: 18px;
@@ -110,16 +145,66 @@ button:hover {
   width: 540px;
 }
 
-.checkbtn {
-  font-size: 30px;
-  color: rgb(1, 185, 213);
-  float: right;
-  cursor: pointer;
-  display: none;
+/* How it Works */
+.how-it-works {
+  height: 90vh;
+  /* background-color: blueviolet; */
+  padding: 10px 10%;
 }
 
-#check {
-  display: none;
+.box-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.box {
+  width: 30%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px 0;
+  position: relative;
+}
+
+.box span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgb(1, 185, 213);
+  color: #fff;
+  position: absolute;
+  top: -2%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.box h4 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.box p {
+  color: grey;
 }
 
 @media screen and (max-width: 1200px) {
@@ -141,7 +226,7 @@ button:hover {
     width: 100px;
   }
 
-  .nav__links li{
+  .nav__links li {
     padding: 0 5px;
   }
 
@@ -179,12 +264,12 @@ button:hover {
     right: -100%;
     top: 56px;
     text-align: center;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
 
   .nav__links li {
     display: block;
@@ -230,6 +315,30 @@ button:hover {
   .content-right img {
     width: 400px;
   }
+
+  /* How it Works */
+
+  .box-container {
+    width: 100%;
+    height: 50%;
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 90%;
+    height: 40%;
+    margin-bottom: 30px;
+  }
+
+  .box::nth-child(3) {
+    margin-right: 0;
+  }
+
+  .heading {
+    padding-bottom: 35px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -244,12 +353,12 @@ button:hover {
     right: -100%;
     top: 56px;
     text-align: center;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
 
   .nav__links li {
     display: block;
@@ -273,9 +382,9 @@ button:hover {
     display: none;
   }
 
-  .signup{
+  .signup {
     display: block;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
 
   .landing-content {
@@ -288,5 +397,15 @@ button:hover {
 
   #check:checked ~ ul {
     right: 0;
+  }
+
+  /* How it Works */
+
+  .box-container {
+    height: 50%;
+  }
+
+  .box {
+    height: 50%;
   }
 }

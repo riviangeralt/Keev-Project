@@ -525,5 +525,6 @@ button:hover {
 
   .features .feature-box p {
     padding: 5px;
+    font-size: 12px;
   }
 }

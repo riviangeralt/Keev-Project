@@ -68,6 +68,7 @@ button:hover {
   top: 0;
   width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  z-index: 999;
 }
 
 .logo {
@@ -147,12 +148,12 @@ button:hover {
 
 /* How it Works */
 .how-it-works {
-  height: 90vh;
+  height: 100vh;
   /* background-color: blueviolet; */
   padding: 10px 10%;
 }
 
-.box-container {
+.how-it-works .box-container {
   width: 100%;
   height: 40%;
   display: flex;
@@ -161,7 +162,7 @@ button:hover {
   margin: 10px 0;
 }
 
-.box {
+.how-it-works .box-container .box {
   width: 30%;
   height: 80%;
   background-color: white;
@@ -174,7 +175,7 @@ button:hover {
   position: relative;
 }
 
-.box span {
+.how-it-works .box-container .box span {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -198,13 +199,63 @@ button:hover {
   -o-transform: translateY(-50%);
 }
 
-.box h4 {
+.how-it-works .box-container .box h4 {
   text-transform: uppercase;
   padding: 10px;
 }
 
-.box p {
+.how-it-works .box-container .box p {
   color: grey;
+}
+
+.how-it-works .features {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.how-it-works .features .feature-box {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid rgb(1, 185, 213);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.how-it-works .features .feature-box:hover {
+  box-shadow: 0 0 10px rgb(1, 185, 213);
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -o-transform: scale(1.025);
+}
+
+.features .feature-box h3 {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.features .feature-box p {
+  padding: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -252,6 +303,28 @@ button:hover {
   button {
     padding: 8px 16px;
     font-size: 14px;
+  }
+
+
+  .how-it-works .features .feature-box {
+    width: 24%;
+    height: 75%;
+  }
+
+  .features .feature-box img{
+    height: 20%;
+    margin-bottom: 20px;
+  }
+
+  .features .feature-box h3 {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .features .feature-box p {
+    padding: 10px;
+    text-align: center;
   }
 }
 
@@ -318,26 +391,49 @@ button:hover {
 
   /* How it Works */
 
-  .box-container {
+  .how-it-works .box-container {
     width: 100%;
-    height: 50%;
-
+    height: 60%;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .box {
+  .how-it-works .box-container .box {
     width: 90%;
     height: 40%;
     margin-bottom: 30px;
   }
 
-  .box::nth-child(3) {
+  .how-it-works .box-container .box::nth-child(3) {
     margin-right: 0;
   }
 
   .heading {
     padding-bottom: 35px;
+  }
+
+  .how-it-works .features {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .how-it-works .features .feature-box {
+    width: 90%;
+    height: 20%;
+  }
+
+  .how-it-works .features .feature-box img{
+    height: 30%;
+  }
+
+  .features .feature-box h3 {
+    padding: 8px;
+    text-align: center;
+  }
+
+  .features .feature-box p {
+    padding: 8px;
   }
 }
 
@@ -401,11 +497,33 @@ button:hover {
 
   /* How it Works */
 
-  .box-container {
+  .how-it-works{
+    height: 100%;
+  }
+
+  .how-it-works .box-container {
     height: 50%;
   }
 
-  .box {
+  .how-it-works .box-container .box {
     height: 50%;
+  }
+
+  .how-it-works .features .feature-box {
+    width: 100%;
+    height: 24%;
+    margin: 10px;
+  }
+
+  .how-it-works .features .feature-box img{
+    width: 10%;
+  }
+  .features .feature-box h3 {
+    padding: 5px;
+
+  }
+
+  .features .feature-box p {
+    padding: 5px;
   }
 }

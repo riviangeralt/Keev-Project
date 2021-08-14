@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | KEEV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://static.wixstatic.com/media/50c456_e997c298887e4aba922f6f34c338abc6~mv2.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/9b90168c7b.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | KEEV</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-  <link rel="icon" sizes="192x192"
-    href="https://static.wixstatic.com/media/50c456_e997c298887e4aba922f6f34c338abc6~mv2.png" />
-  <script src="https://kit.fontawesome.com/9b90168c7b.js" crossorigin="anonymous"></script>
-
-  <!--<style>
+    <!--<style>
       * {
   box-sizing: border-box;
   margin: 0;
@@ -309,131 +317,173 @@ button:hover {
 }
 
     </style>-->
-</head>
+  </head>
 
-<body>
-  <div class="container">
-    <header class="nav__bar">
-      <img class="logo"
-        src="https://static.wixstatic.com/media/ccab99_be43789de7bc4021a9e5215c35095062~mv2.png/v1/crop/x_0,y_5,w_698,h_205/fill/w_232,h_68,al_c,q_85,usm_0.66_1.00_0.01/beta_keev_edited.webp" />
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav__links">
-          <li><a href="#">how it works</a></li>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">pricing</a></li>
-          <li><a href="#">community</a></li>
-          <li><a href="#">support</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="#"><button>login</button></a>
-    </header>
-    <div class="landing-content">
-      <div class="content-left">
-        <h4>Simplifying <span>Algorithmic Trading.</span></h4>
-        <p>
-          We provide a simple way to build, test and go live with your
-          algorithmic trading strategy
-        </p>
-        <a class="signup" href="#"><button>sign up</button></a>
-        <a class="view-features" href="#"><button>view features</button></a>
-      </div>
-      <div class="content-right">
-        <img src="https://static.wixstatic.com/media/50c456_6a4aee5224414ffbb13bc3755938db0e~mv2.png" />
-      </div>
-    </div>
-
-    <div class="how-it-works">
-      <div class="heading">
-        <h3>how it works</h3>
-      </div>
-      <div class="box-container">
-        <div class="box">
-          <span>1</span>
-          <h4>build strategy</h4>
+  <body>
+    <div class="container">
+      <header class="nav__bar">
+        <img
+          class="logo"
+          src="https://static.wixstatic.com/media/ccab99_be43789de7bc4021a9e5215c35095062~mv2.png/v1/crop/x_0,y_5,w_698,h_205/fill/w_232,h_68,al_c,q_85,usm_0.66_1.00_0.01/beta_keev_edited.webp"
+        />
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul class="nav__links">
+            <li><a href="#features">features</a></li>
+            <li><a href="#about-us">about us</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">community</a></li>
+            <li><a href="#">support</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="#"><button>login</button></a>
+      </header>
+      <div class="container-inside landing-content">
+        <div class="content-left">
+          <h4>Simplifying <span>Algorithmic Trading.</span></h4>
           <p>
-            KEEV enables users to quickly develop strategies without any
-            programming. You can create millions of strategies with
-            combinations of over 60+ technical indicators for 2000+ trading
-            symbols.
+            We provide a simple way to build, test and go live with your
+            algorithmic trading strategy
+          </p>
+          <a class="signup" href="#"><button>sign up</button></a>
+          <a class="view-features" href="#"><button>view features</button></a>
+        </div>
+        <div class="content-right">
+          <img
+            src="https://static.wixstatic.com/media/50c456_6a4aee5224414ffbb13bc3755938db0e~mv2.png"
+          />
+        </div>
+      </div>
+
+      <div class="container-inside how-it-works" id="features">
+        <video autoplay muted loop id="myVideo">
+          <source src="vid.mp4" type="video/mp4" />
+        </video>
+        <div class="heading heading-2">
+          <h3>Our features</h3>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="shape">
+              <div class="inner-shape bkg1">
+                <div class="content">
+                  <img
+                    src="https://static.wixstatic.com/media/814501_33573d1d0c2d4dff885798f989b97349~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/layers.webp"
+                    alt=""
+                  />
+                  <h2>Visualisation</h2>
+                  <p>KEEV Canvas helps you <br />visualise your strategy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="shape">
+              <div class="inner-shape bkg2">
+                <div class="content">
+                  <img
+                    src="https://static.wixstatic.com/media/814501_0d9beff1d71642f39e63b19485ab79b9~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/running.webp"
+                    alt=""
+                  />
+                  <h2>Optimisation</h2>
+                  <p>Backtest 40+ <br />combination in one go</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="shape">
+              <div class="inner-shape bkg3">
+                <div class="content">
+                  <img
+                    src="https://static.wixstatic.com/media/814501_70e4fbeac0804839bfbd89a0924a1386~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/pantone.webp"
+                    alt=""
+                  />
+                  <h2>Know Your Strategy</h2>
+                  <p>
+                    Evaluate strategies on<br />
+                    metrics and transactions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="shape">
+              <div class="inner-shape bkg4">
+                <div class="content">
+                  <img
+                    src="https://static.wixstatic.com/media/814501_c056aef872aa4d07a11120c6fa811e1f~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/support.webp"
+                    alt=""
+                  />
+                  <h2>Multiple Brokers</h2>
+                  <p>
+                    We have integrated top<br />
+                    brokers for trade execution
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-inside about-us" id="about-us">
+        <div class="about-left">
+          <a href="#video" onclick="openPopup(); return false;"
+            ><img
+              src="https://static.wixstatic.com/media/814501_2e259b25c77f47f7854656a332b3e1df~mv2.jpg/v1/fill/w_540,h_389,al_c,q_80,usm_0.66_1.00_0.01/814501_d39d1f91340f40779080b1abba2ada4a_.webp"
+              alt=""
+          /></a>
+          <div class="vid-container" id="video">
+            <i class="fas fa-times" onclick="closePopup(); return false;"></i>
+            <div class="video">
+              <iframe
+                width="853"
+                height="480"
+                src="https://www.youtube.com/embed/U14Yjg3Hf5Q"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <h3>about us</h3>
+          <h2 class="heading">who are we</h2>
+          <p>
+            We make algorithmic trading simple for you. Usually, you might need
+            to invest in infrastructure and write tons of code to perform any
+            kind of algorithmic trading. But with us, you can do all this in a
+            few clicks on our dashboard. Because at KEEV we will help to unleash
+            the immense power of trading and combine it with market data and
+            information sourced from various platforms and brokers.
+          </p>
+          <p>
+            That's not all, we also help you backtest and optimise your trade
+            strategies. As we understand that, unless you do your own research
+            or get a scientific explanation for the recommendation made by an
+            industry expert, you would choose to stay away from the markets. To
+            satiate this curiosity, we bring you user-friendly algorithm trading
+            platform
           </p>
         </div>
-
-        <div class="box">
-          <span>2</span>
-          <h4>Test & Optimise</h4>
-          <p>
-            Validate your strategy using historical data and evaluate its
-            performance on more than 20+ metrics. Furthermore, you can
-            optimise with help of KEEV Engine to get the best result for your
-            strategy.
-          </p>
-        </div>
-
-        <div class="box">
-          <span>3</span>
-          <h4>Virtual & Live</h4>
-          <p>
-            Examine strategies in the live market with virtual money. Go live
-            with real money on one click with help of our supported brokers.
-          </p>
-        </div>
       </div>
-      <div class="heading heading-2">
-        <h3>Our features</h3>
-      </div>
-      <div class="row">
-        <div class="col">
-            <div class="shape">
-                <div class="inner-shape bkg1">
-                    <div class="content">
-                      <img src="https://static.wixstatic.com/media/814501_33573d1d0c2d4dff885798f989b97349~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/layers.webp" alt="">
-                        <h2>Visualisation</h2>
-                       <p>KEEV Canvas helps you <br>visualise your strategy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="shape">
-                <div class="inner-shape bkg2">
-                  <div class="content">
-                    <img src="https://static.wixstatic.com/media/814501_0d9beff1d71642f39e63b19485ab79b9~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/running.webp" alt="">
-                      <h2>Optimisation</h2>
-                     <p>Backtest 40+ <br>combination in one go</p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="shape">
-                <div class="inner-shape bkg3">
-                  <div class="content">
-                    <img src="https://static.wixstatic.com/media/814501_70e4fbeac0804839bfbd89a0924a1386~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/pantone.webp" alt="">
-                      <h2>Know Your Strategy</h2>
-                     <p>Evaluate strategies on<br> metrics and transactions</p>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="shape">
-                <div class="inner-shape bkg4">
-                  <div class="content">
-                    <img src="https://static.wixstatic.com/media/814501_c056aef872aa4d07a11120c6fa811e1f~mv2.png/v1/fill/w_61,h_59,al_c,q_85,usm_0.66_1.00_0.01/support.webp" alt="">
-                      <h2>Multiple Brokers</h2>
-                     <p>We have integrated top<br> brokers for trade execution</p>
-                  </div>
-                </div>
-            </div>
-        </div>
     </div>
-    </div>
-  </div>
-  </div>
-</body>
+    <script>
+      function openPopup() {
+        popup = document.getElementById("video");
+        popup.style.display = "block";
+      }
 
+      function closePopup() {
+        popup = document.getElementById("video");
+        popup.style.display = "none";
+      }
+    </script>
+  </body>
 </html>

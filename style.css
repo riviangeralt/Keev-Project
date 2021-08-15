@@ -619,7 +619,7 @@ button:hover {
 
   .pricing-sec-card-1 .pricing-card,
   .pricing-sec-card-2 .pricing-card {
-    width: 40%;
+    width: auto;
     margin-bottom: 20px;
   }
 }
@@ -723,11 +723,6 @@ button:hover {
   .pricing {
     margin-top: 10%;
   }
-
-  .pricing-sec-card-1 .pricing-card,
-  .pricing-sec-card-2 .pricing-card {
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -815,12 +810,5 @@ button:hover {
   .about-us .about-left .vid-container .video iframe {
     width: 100%;
     height: auto;
-  }
-
-   /*Pricing*/
-
-  .pricing-sec-card-1 .pricing-card,
-  .pricing-sec-card-2 .pricing-card {
-    width: 60%;
   }
 }

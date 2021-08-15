@@ -308,7 +308,7 @@ button:hover {
 .about-us .about-left .vid-container {
   display: none;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -355,12 +355,12 @@ button:hover {
   align-items: center;
 }
 
-.pricing-sec-card-2{
+.pricing-sec-card-2 {
   display: none;
   justify-content: center;
 }
 
-.pricing-sec-card-2 .pricing-card{
+.pricing-sec-card-2 .pricing-card {
   margin: 0 20px;
 }
 
@@ -418,7 +418,7 @@ button:hover {
 }
 
 .toggle .toggle-btn {
-  background-color: #00A2D1;
+  background-color: #00a2d1;
   width: 80px;
   height: 40px;
   border-radius: 30px;
@@ -452,7 +452,7 @@ button:hover {
 }
 
 .toggle .month {
-  color: #00A2D1;
+  color: #00a2d1;
 }
 
 .pricing-card h2 {
@@ -606,6 +606,22 @@ button:hover {
     line-height: 1.2;
     font-size: 15px;
   }
+
+  /*Pricing*/
+
+  .pricing {
+    margin-top: 30%;
+  }
+
+  .pricing-sec-card {
+    flex-direction: column;
+  }
+
+  .pricing-sec-card-1 .pricing-card,
+  .pricing-sec-card-2 .pricing-card {
+    width: 40%;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -701,6 +717,17 @@ button:hover {
   .about-us {
     flex-direction: column;
   }
+
+  /*Pricing*/
+
+  .pricing {
+    margin-top: 10%;
+  }
+
+  .pricing-sec-card-1 .pricing-card,
+  .pricing-sec-card-2 .pricing-card {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -710,7 +737,7 @@ button:hover {
   .nav__links {
     position: fixed;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background: rgb(1, 185, 213);
     right: -100%;
     top: 56px;
@@ -788,5 +815,12 @@ button:hover {
   .about-us .about-left .vid-container .video iframe {
     width: 100%;
     height: auto;
+  }
+
+   /*Pricing*/
+
+  .pricing-sec-card-1 .pricing-card,
+  .pricing-sec-card-2 .pricing-card {
+    width: 60%;
   }
 }

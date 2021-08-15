@@ -59,10 +59,6 @@ button:hover {
   background-color: rgba(1, 185, 213, 0.8);
 }
 
-.container{
-/* height: calc(100%-64px); */
-}
-
 .container-inside {
   height: 100vh;
   padding: 10px 10%;
@@ -171,8 +167,6 @@ button:hover {
 }
 
 .how-it-works .row {
-  /*background-color: aqua;
-  */
   width: 100%;
   display: flex;
   align-items: center;
@@ -269,6 +263,7 @@ button:hover {
   background: #ff5722;
 }
 
+/*About Us*/
 .about-us {
   position: relative;
 }
@@ -310,41 +305,230 @@ button:hover {
   word-spacing: 2px;
 }
 
-.about-us .about-left .vid-container{
+.about-us .about-left .vid-container {
   display: none;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   backdrop-filter: blur(52px);
   z-index: 9998;
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 
-.about-us .about-left .vid-container .fas{
+.about-us .about-left .vid-container .fas {
   padding: 10px;
   font-size: 30px;
   cursor: pointer;
 }
 
-.about-us .about-left .vid-container .video{
+.about-us .about-left .vid-container .video {
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;   
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 9999;
 }
 
-.about-us .about-left img:hover{
-  cursor: url('https://www-static.cdn.prismic.io/www-static/d08f88f9-ddfa-49ac-93dc-15da48fa0b3f_home-video-play-btn.svg') 10 10, auto;
+.about-us .about-left img:hover {
+  cursor: url("https://www-static.cdn.prismic.io/www-static/d08f88f9-ddfa-49ac-93dc-15da48fa0b3f_home-video-play-btn.svg")
+      10 10,
+    auto;
 }
 
+/*Pricing*/
+.pricing {
+  flex-direction: column;
+}
+
+.pricing-sec-card {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-sec-card-2{
+  display: none;
+  justify-content: center;
+}
+
+.pricing-sec-card-2 .pricing-card{
+  margin: 0 20px;
+}
+
+.pricing-card {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.pricing-card .pricing-card-header {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #01b9d5;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  transition: 0.4s linear;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+  box-shadow: 0 0 0 17em #01b9d5;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .pricing-plan,
+.pricing-card:hover h2,
+.pricing-card:hover span,
+.pricing-card:hover .lists .comps-1 li,
+.pricing-card:hover .lists .comps-2 li {
+  color: white;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.toggle .toggle-btn {
+  background-color: #00A2D1;
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 5px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  margin: 0 10px;
+}
+
+.toggle-btn .inner-circle {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.toggle-btn.active > .inner-circle {
+  margin-left: 40px;
+}
+
+.toggle .month {
+  color: #00A2D1;
+}
+
+.pricing-card h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #777;
+}
+
+.pricing-card .pricing-plan span {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.pricing-card span {
+  height: 10%;
+  padding: 10px;
+  text-align: center;
+  color: #777;
+}
+
+.pricing-card .lists {
+  display: flex;
+  width: 100%;
+  padding: 0 15px;
+}
+.pricing-card .comps-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.pricing-card .comps-2 {
+  padding-top: 15px;
+}
+
+.pricing-card .comps-2 .fas {
+  color: red;
+}
+
+.pricing-card .comps-2 .fa-check {
+  color: green;
+}
+
+.pricing-card .comps-2 li {
+  line-height: 2;
+  text-align: right;
+  color: #777;
+}
+
+.pricing-card .comps-1 li {
+  line-height: 2;
+  text-align: left;
+  color: #777;
+}
+
+.pricing-card a {
+  padding: 10px 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border: 1px solid rgba(1, 185, 213, 1);
+  border-radius: 10px;
+  color: rgba(1, 185, 213, 1);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.pricing-card a:hover {
+  color: white;
+  background-color: rgba(1, 185, 213, 1);
+}
 
 @media screen and (max-width: 1200px) {
   header {
@@ -385,7 +569,7 @@ button:hover {
     text-align: center;
   }
   .content-right img {
-    width: 450px;
+    width: 100%;
   }
 
   button {
@@ -404,27 +588,31 @@ button:hover {
   .how-it-works .row .col {
     margin-bottom: 30px;
   }
-  
+
   .about-us .about-left img {
-    width: 400px;
+    width: 100%;
   }
-  
+
   .about-us .about-right {
     padding: 5px;
   }
-  
+
   .about-us h2 {
     padding-bottom: 8px;
   }
-  
+
   .about-us p {
     padding-bottom: 10px;
     line-height: 1.2;
     font-size: 15px;
-  }  
+  }
 }
 
 @media screen and (max-width: 750px) {
+  .container-inside {
+    height: auto;
+  }
+
   .nav__links {
     position: fixed;
     width: 50%;
@@ -482,7 +670,7 @@ button:hover {
   }
 
   .content-right img {
-    width: 400px;
+    width: 100%;
   }
 
   /* How it Works */
@@ -512,7 +700,7 @@ button:hover {
 
   .about-us {
     flex-direction: column;
-  }  
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -595,10 +783,10 @@ button:hover {
   .how-it-works .row .col {
     margin-bottom: 30px;
   }
-    /*About us */
+  /*About us */
 
   .about-us .about-left .vid-container .video iframe {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 }

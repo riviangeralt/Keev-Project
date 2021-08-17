@@ -266,6 +266,7 @@ button:hover {
 /*About Us*/
 .about-us {
   position: relative;
+  overflow: hidden;
 }
 
 .about-us .about-left {
@@ -280,20 +281,22 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.about-us h3 {
+.about-us .about-right h3 {
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.about-us h2 {
+.about-us .about-right h2 {
   padding-bottom: 10px;
 }
 
-.about-us p {
+.about-us .about-right p {
   padding-bottom: 15px;
   line-height: 1.5;
   font-weight: 100;
@@ -303,6 +306,62 @@ button:hover {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   word-spacing: 2px;
+}
+
+.about-us .about-right :nth-child(1) {
+  width: 200px;
+  height: 230px;
+  background-color: orangered;
+  border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s;
+  position: absolute;
+  top: 20%;
+  right: -20%;
+  z-index: -1;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  -moz-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  -ms-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  -o-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  transition: all 1s infinite;
+}
+
+.about-us .about-right :nth-child(2) {
+  width: 200px;
+  height: 230px;
+  background-color: yellow;
+  border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s;
+  position: absolute;
+  top: 40%;
+  right: 80%;
+  z-index: -1;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  -moz-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  -ms-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  -o-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
+  transition: all 1s infinite;
+  -webkit-transition: all 1s infinite;
+  -moz-transition: all 1s infinite;
+  -ms-transition: all 1s infinite;
+  -o-transition: all 1s infinite;
 }
 
 .about-us .about-left .vid-container {
@@ -340,6 +399,75 @@ button:hover {
   cursor: url("https://www-static.cdn.prismic.io/www-static/d08f88f9-ddfa-49ac-93dc-15da48fa0b3f_home-video-play-btn.svg")
       10 10,
     auto;
+}
+
+/*partners*/
+.testimonials {
+  flex-direction: column;
+  height: auto;
+}
+
+.testimonials .carousel {
+  /* background-color: blueviolet; */
+  padding: 0 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.testimonials .carousel .card {
+  width: 100%;
+  height: 20%;
+  margin-top: 20px;
+}
+
+/*Testimonials*/
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 5% 0;
+}
+
+
+.testimonial-container .testimonial-box {
+  width: 30%;
+  border-radius: 5px;
+  padding: 20px 25px;
+  text-align: center;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  border: 1px solid rgba(1, 185, 213, 1);
+}
+
+.testimonial-container .testimonial-box:hover {
+  background-color: rgba(1, 185, 213, 1);
+  color: white;
+  box-shadow: 0 0 15px 0 rgb(8, 222, 230);
+  border: none;
+  transform: translateY(-13px);
+  -webkit-transform: translateY(-13px);
+  -moz-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+}
+
+.testimonial-container .testimonial-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.testimonial-container .testimonial-box p {
+  padding-top: 20px;
 }
 
 /*Pricing*/
@@ -723,6 +851,17 @@ button:hover {
   .pricing {
     margin-top: 10%;
   }
+
+  /*Testimonials*/
+.testimonial-container {
+  flex-direction: column;
+}
+
+
+.testimonial-container .testimonial-box {
+  width: 100%;
+  margin-bottom: 50px ;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -812,3 +951,4 @@ button:hover {
     height: auto;
   }
 }
+

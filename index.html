@@ -17,306 +17,15 @@
       sizes="192x192"
       href="https://static.wixstatic.com/media/50c456_e997c298887e4aba922f6f34c338abc6~mv2.png"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script
       src="https://kit.fontawesome.com/9b90168c7b.js"
       crossorigin="anonymous"
     ></script>
 
-    <!--<style>
-      * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-}
-
-li,
-a,
-button {
-  font-weight: 500;
-  font-size: 16px;
-  color: black;
-}
-
-.nav__bar {
-  background:#fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10%;
-  position: fixed !important;
-  top: 0;
-  width:100%
-}
-
-.logo {
-  cursor: pointer;
-  width: 150px;
-}
-
-.nav__links li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.nav__links li a {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.nav__links li a:hover {
-  padding-bottom: 10px;
-  border-bottom: 3px solid rgba(67, 194, 221, 1);
-}
-
-button {
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 20px;
-  background-color: rgba(1, 185, 213, 1);
-  color: white;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: rgba(1, 185, 213, 0.8);
-}
-
-.landing-content {
-  background-image: url("https://static.wixstatic.com/media/50c456_96fa53259f494ae08e32c8f733bc6467~mv2.jpg"),
-    linear-gradient(to bottom, rgb(1, 185, 213), #ffffff);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 90vh;
-  padding: 10px 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.content-left h4 {
-  font-size: 50px;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-
-.content-left h4 span{
-  display: block;
-  font-weight: 300;
-}
-
-
-.content-left p {
-  font-size: 18px;
-  font-weight: 100;
-  padding-bottom: 30px;
-}
-.content-right {
-  text-align: center;
-}
-.content-right img {
-  width: 540px;
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: rgb(1, 185, 213);
-  float: right;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  header {
-    padding: 10px 5%;
-  }
-
-  .nav__links li {
-    padding: 0 10px;
-  }
-
-  .nav__links li a {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .logo {
-    width: 100px;
-  }
-
-  .nav__links li{
-    padding: 0 5px;
-  }
-
-  .landing-content {
-    padding: 15px 10%;
-    flex-direction: column-reverse;
-  }
-
-  .content-left h4 {
-    font-size: 40px;
-  }
-
-  .content-left p {
-    font-size: 15px;
-  }
-  .content-right {
-    text-align: center;
-  }
-  .content-right img {
-    width: 450px;
-  }
-
-  button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .nav__links {
-    position: fixed;
-    width: 50%;
-    height: 100vh;
-    background: rgb(1, 185, 213);
-    right: -100%;
-    top: 56px;
-    text-align: center;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
-
-  .nav__links li {
-    display: block;
-    padding: 20px 0;
-  }
-
-  .nav__links li:first-child {
-    padding-top: 50px;
-  }
-
-  .nav__links li a {
-    color: white;
-    font-size: 16px;
-  }
-
-  .nav__links li a:hover {
-    border-bottom: 3px solid white;
-  }
-
-  header .cta {
-    display: none;
-  }
-
-  .checkbtn {
-    display: block;
-  }
-
-  #check:checked ~ ul {
-    right: 0;
-  }
-
-  .landing-content {
-    padding: 155px 10%;
-  }
-
-  .content-left {
-    text-align: center;
-  }
-  .content-left h4 {
-    font-size: 30px;
-  }
-
-  .content-right img {
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    overflow: hidden;
-  }
-  .nav__links {
-    position: fixed;
-    width: 50%;
-    height: 100vh;
-    background: rgb(1, 185, 213);
-    right: -100%;
-    top: 56px;
-    text-align: center;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
-
-  .nav__links li {
-    display: block;
-    padding: 20px 0;
-  }
-
-  .nav__links li:first-child {
-    padding-top: 50px;
-  }
-
-  .nav__links li a {
-    color: white;
-    font-size: 16px;
-  }
-
-  .nav__links li a:hover {
-    border-bottom: 3px solid white;
-  }
-
-  header .cta {
-    display: none;
-  }
-
-  .signup{
-    display: block;
-    margin-bottom:20px;
-  }
-
-  .landing-content {
-    padding: 205px 10%;
-  }
-
-  .checkbtn {
-    display: block;
-  }
-
-  #check:checked ~ ul {
-    right: 0;
-  }
-}
-
-    </style>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </head>
 
   <body>
@@ -439,8 +148,8 @@ button:hover {
               alt=""
           /></a>
           <div class="vid-container" id="video">
-            <i class="fas fa-times" onclick="closePopup(); return false;"></i>
-            <div class="video">
+            <i class="fas fa-times" onclick="closePopup();"></i>
+            <div class="video" id="vid">
               <iframe
                 width="853"
                 height="480"
@@ -454,6 +163,8 @@ button:hover {
           </div>
         </div>
         <div class="about-right">
+					<div class="inner-shape">&nbsp;</div>
+					<div class="inner-shape">&nbsp;</div>
           <h3>about us</h3>
           <h2 class="heading">who are we</h2>
           <p>
@@ -462,7 +173,7 @@ button:hover {
             kind of algorithmic trading. But with us, you can do all this in a
             few clicks on our dashboard. Because at KEEV we will help to unleash
             the immense power of trading and combine it with market data and
-            information sourced from various platforms and brokers.
+            information sour ced from various platforms and brokers.
           </p>
           <p>
             That's not all, we also help you backtest and optimise your trade
@@ -472,6 +183,33 @@ button:hover {
             satiate this curiosity, we bring you user-friendly algorithm trading
             platform
           </p>
+        </div>
+      </div>
+      <div class="testimonials container-inside">
+        <h2 class="heading">testimonials</h2>
+        <div class="testimonial-container">
+        <div class="testimonial-box">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique enim, ab, illo corrupti ea vitae odit assumenda cupiditate consectetur blanditiis amet! Incidunt labore voluptatibus nostrum impedit sint modi deleniti dolore! Eaque ipsa at deserunt exercitationem alias eius quia tenetur nisi.</p>
+        </div>
+        <div class="testimonial-box">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique enim, ab, illo corrupti ea vitae odit assumenda cupiditate consectetur blanditiis amet! Incidunt labore voluptatibus nostrum impedit sint modi deleniti dolore! Eaque ipsa at deserunt exercitationem alias eius quia tenetur nisi.</p>
+        </div>
+        <div class="testimonial-box">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=300&q=80" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique enim, ab, illo corrupti ea vitae odit assumenda cupiditate consectetur blanditiis amet! Incidunt labore voluptatibus nostrum impedit sint modi deleniti dolore! Eaque ipsa at deserunt exercitationem alias eius quia tenetur nisi.</p>
+        </div>
+      </div>
+             
+
+        <h2 class="heading">Our Partners</h2>
+        <div class="carousel owl-carousel">
+          <div class="card"><a href="https://aliceblueonline.com/" target="_blank"><img src="./images/aliceblue.jpg" alt=""></a></div>
+          <div class="card"><a href="https://trade.angelbroking.com/" target="_blank"><img src="./images/angelbroking.jpg" alt=""></a></div>
+          <div class="card"><a href="https://fyers.in/" target="_blank"><img src="./images/fyers.png" alt=""></a></div>
+          <div class="card"><a href="https://www.mastertrust.co.in/" target="_blank"><img src="./images/mastertrust.png" alt=""></a></div>
+          <div class="card"><a href="https://zerodha.com/" target="_blank"><img src="./images/zerodha.png" alt=""></a></div>
         </div>
       </div>
       <div class="pricing container-inside" id="pricing">
@@ -625,14 +363,27 @@ button:hover {
     </div>
     <script>
       function openPopup() {
-        popup = document.getElementById("video");
+        var popup = document.getElementById("video");
+				video =	document.getElementById("vid");
         popup.style.display = "block";
+				video.style.display = "block";
       }
 
       function closePopup() {
         popup = document.getElementById("video");
+				video =	document.getElementById("vid");
+
+				window.onkeydown = function( event ) {
+   				if ( event.keyCode == 27 ) {
+      			popup.style.display="none";
+						video.style.display = "none";
+    			}
+				};
         popup.style.display = "none";
+				video.style.display = "none";
       }
+
+     
 
       function toggle() {
         var monthly = document.querySelector(".month");
@@ -656,7 +407,32 @@ button:hover {
         }
       }
 
-      
+      $(".carousel").owlCarousel({
+        margin:10,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+
+        responsive:{
+          0:{
+            items:1,
+            nav:false
+          },
+          600:{
+            items:2,
+            nav:false
+          },
+          900:{
+            items:3,
+            nav:false
+          },
+          1000:{
+            items:4,
+            nav:false
+          }
+        }
+      });
     </script>
   </body>
 </html>

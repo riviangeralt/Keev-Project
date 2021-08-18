@@ -274,16 +274,21 @@ button:hover {
 }
 
 .about-us .about-right {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* margin-left: 10px; */
   flex: 1;
   padding: 10px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
+
 
 .about-us .about-right h3 {
   text-align: center;
@@ -306,62 +311,6 @@ button:hover {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   word-spacing: 2px;
-}
-
-.about-us .about-right :nth-child(1) {
-  width: 200px;
-  height: 230px;
-  background-color: orangered;
-  border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: 0.5s;
-  position: absolute;
-  top: 20%;
-  right: -20%;
-  z-index: -1;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -webkit-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  -moz-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  -ms-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  -o-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  transition: all 1s infinite;
-}
-
-.about-us .about-right :nth-child(2) {
-  width: 200px;
-  height: 230px;
-  background-color: yellow;
-  border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: 0.5s;
-  position: absolute;
-  top: 40%;
-  right: 80%;
-  z-index: -1;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  -moz-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  -ms-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  -o-border-radius: 50% 126% 100% 80% / 50% 80% 100% 107%;
-  transition: all 1s infinite;
-  -webkit-transition: all 1s infinite;
-  -moz-transition: all 1s infinite;
-  -ms-transition: all 1s infinite;
-  -o-transition: all 1s infinite;
 }
 
 .about-us .about-left .vid-container {
@@ -430,9 +379,9 @@ button:hover {
   margin: 5% 0;
 }
 
-
 .testimonial-container .testimonial-box {
   width: 30%;
+  height: 40vh;
   border-radius: 5px;
   padding: 20px 25px;
   text-align: center;
@@ -441,7 +390,15 @@ button:hover {
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
-  border: 1px solid rgba(1, 185, 213, 1);
+  /* border: 1px solid rgba(1, 185, 213, 1); */
+
+  border: 2px solid rgb(1, 185, 213);
+  border-radius: 126% 50% 80% 100% / 80% 50% 107% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 0.5s;
+  position: relative;
 }
 
 .testimonial-container .testimonial-box:hover {
@@ -467,7 +424,8 @@ button:hover {
 }
 
 .testimonial-container .testimonial-box p {
-  padding-top: 20px;
+  /* padding: 20px; */
+  font-size: 14px;
 }
 
 /*Pricing*/
@@ -670,6 +628,21 @@ button:hover {
   .nav__links li a {
     font-size: 14px;
   }
+
+
+  /*Testimonial*/
+  .testimonial-container {
+    display: grid;
+    justify-items: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap:2rem;
+  }
+  
+  .testimonial-container .testimonial-box {
+    width: 100%;
+    height: 30vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -852,16 +825,26 @@ button:hover {
     margin-top: 10%;
   }
 
-  /*Testimonials*/
-.testimonial-container {
-  flex-direction: column;
-}
 
+ /*Testimonial*/
+ .testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  align-items: center;
+}
 
 .testimonial-container .testimonial-box {
-  width: 100%;
-  margin-bottom: 50px ;
+  width: 60%;
+  height: 30vh;
 }
+
+/*Pricing*/
+.pricing-sec-card-1 .pricing-card,
+  .pricing-sec-card-2 .pricing-card {
+    width: 55%;
+    
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -950,5 +933,24 @@ button:hover {
     width: 100%;
     height: auto;
   }
+
+/*Pricing*/
+.pricing-sec-card-1 .pricing-card,
+  .pricing-sec-card-2 .pricing-card {
+    width: 65%;
+    
+  }
+
+  /*Testimonial*/
+ 
+
+.testimonial-container .testimonial-box {
+  width: 80%;
+  height: 30vh;
+}
+
+.testimonial-container .testimonial-box:nth-child(3){
+  margin-bottom: 20px;
+}
 }
 

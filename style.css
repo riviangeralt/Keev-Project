@@ -937,7 +937,7 @@ button:hover {
 /*Pricing*/
 .pricing-sec-card-1 .pricing-card,
   .pricing-sec-card-2 .pricing-card {
-    width: 65%;
+    width: 80%;
     
   }
 
@@ -945,7 +945,7 @@ button:hover {
  
 
 .testimonial-container .testimonial-box {
-  width: 80%;
+  width: 100%;
   height: 30vh;
 }
 
